@@ -29,16 +29,6 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
 
-//    @Bean
-//    public ReactiveAuthenticationManager authenticationManager(){
-//
-//    }
-
-//    @Bean
-//    ReactiveUserDetailsService reactiveUserDetailsService(){
-//
-//    }
-
     @Bean
     public SecurityWebFilterChain springSecurityFilterChain(ServerHttpSecurity http){
         http
